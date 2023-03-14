@@ -20,11 +20,62 @@ body {
     background-color: white;
     grid-area: 1 / 2 / 2 / 3;
     /* box-shadow: rgba(0, 0, 0, 0.45) 0px 16px 20px -20px; */
+    padding: 30px 30px 30px 30px;
+    display: grid;
+    /* grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: auto;
+    grid-area: 
+        "search-icon search-bar search-bar search-bar . bell-icon pfp username" */
+}
+
+.top-row {
+    display: grid;
+    grid-template-columns: 0.5fr 4fr 0.5fr 0.5fr 1fr;
+    grid-template-rows: 2rem;
+    justify-items: center;
+    align-items: center;
+    /* grid-template-areas: 
+        "search-icon search-bar . bell-icon pfp username"; */
+    
+}
+
+#search-icon {
+    /* grid-area: search-icon; */
 }
 
 #searchbar {
-    background-color: lightgrey;
+    background-color: black;
     border-radius: 10px;
+    /* grid-area: search-bar; */
+    justify-self: start;
+}
+
+#bell-icon {
+    /* grid-area: bell-icon; */
+}
+
+#pfp {
+    /* grid-area: pfp; */
+}
+
+#usename {
+    /* grid-area: username; */
+}
+
+.bottom-row {
+    
+}
+
+.profile {
+    /* grid-area: profile; */
+}
+
+button{
+    height: 2rem;
+}
+
+.btn{
+    grid-area: btn;
 }
 
 #sidebar {
@@ -81,6 +132,13 @@ p#announcement {
 
 .announcement {
     grid-area: 1 / 1 / 2 / 2;
+}
+
+.ann1 {
+    margin: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px;
+    border-color: black;
 }
 
 .trending {
