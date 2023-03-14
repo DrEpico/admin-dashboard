@@ -46,8 +46,8 @@ body {
 #searchbar {
     background-color: black;
     border-radius: 10px;
-    /* grid-area: search-bar; */
     justify-self: start;
+    /* grid-area: search-bar; */
 }
 
 #bell-icon {
@@ -63,19 +63,27 @@ body {
 }
 
 .bottom-row {
+    display: grid;
+    grid-template-columns: 4fr 2fr;
     
 }
 
 .profile {
     /* grid-area: profile; */
+    display: grid;
 }
 
 button{
     height: 2rem;
+    width: 100px;
 }
 
 .btn{
-    grid-area: btn;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    place-self: center;
+    gap: 30px;
 }
 
 #sidebar {
