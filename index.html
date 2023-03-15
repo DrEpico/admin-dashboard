@@ -19,10 +19,12 @@
             <p id="username">Morgan Oakley</p>
         </div>
         <div class="bottom-row">
-            <div id="profile">
+            <div class="nest-parent" id="big-profile">
                 <img alt="pfp">
-                <p id="hi-there-text">Hi there,</p>
-                <p id="usernameid">Morgan Oakley (@morgan)</p>
+                <div class="nest-child">
+                    <p id="hi-there-text">Hi there,</p>
+                    <h3 id="usernameid">Morgan Oakley (@morgan)</h3>
+                </div>
             </div>
             <div class="btn">
                 <button class="ehader-btn" id="New">New</button>
@@ -117,27 +119,37 @@
                     <p>Various verometimes bn purpose (injected humour and the like).</p>
                 </div>
             </div>  
-            <div class="card trending">
-                <p>Trendings</p>
-                <div id="trend-1">
-                    <img src="" alt="pfp">
-                    <h4 class="username">@logan</h4>
-                    <p class="intro">World Peace Builder</p>
-                </div>
-                <div id="trend-2">
-                    <img src="" alt="pfp">
-                    <h4 class="username">@paul</h4>
-                    <p class="intro">World Peace Builder</p>
-                </div>
-                <div id="trend-3">
-                    <img src="" alt="pfp">
-                    <h4 class="username">@chong</h4>
-                    <p class="intro">World Peace Builder</p>
-                </div>
-                <div id="trend-4">
-                    <img src="" alt="pfp">
-                    <h4 class="username">@wattson</h4>
-                    <p class="intro">World Peace Builder</p>
+            <div class="trending">
+                <h3>Trendings</h3>
+                <div class="card">
+                    <div class="nest-parent" id="trend-1">
+                        <img src="" alt="pfp">
+                        <div class="nest-child">
+                            <h4 class="username">@logan</h4>
+                            <p class="intro">World Peace Builder</p>
+                        </div>
+                    </div>
+                    <div class="nest-parent" id="trend-2">
+                        <img src="" alt="pfp">
+                        <div class="nest-child">
+                            <h4 class="username">@paul</h4>
+                            <p class="intro">World Peace Builder</p>
+                        </div>
+                    </div>
+                    <div class="nest-parent" id="trend-3">
+                        <img src="" alt="pfp">
+                        <div class="nest-child">
+                            <h4 class="username">@chong</h4>
+                            <p class="intro">World Peace Builder</p>
+                        </div>
+                    </div>
+                    <div class="nest-parent" id="trend-4">
+                        <img src="" alt="pfp">
+                        <div class="nest-child">
+                            <h4 class="username">@wattson</h4>
+                            <p class="intro">World Peace Builder</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

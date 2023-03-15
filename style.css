@@ -66,14 +66,18 @@ body {
 .bottom-row {
     display: grid;
     grid-template-columns: 4fr 2fr;
-    align-items: ;
 }
 
-.profile {
-    /* grid-area: profile; */
-    display: grid;
-    
+#big-profile {
+    gap: 1.5rem;
 }
+
+.nest-parent {
+    display: flex;
+    gap: 1rem;
+}
+
+.nest-child {}
 
 button{
     height: 2rem;
@@ -181,10 +185,11 @@ p#announcement {
 
 #sub {
     grid-area: 2 / 2 / 3 / 3;
-    display: grid;
-    grid-template-columns: minmax(200px,1fr);
+    display: flex;
+    flex-direction: column;
+    /* grid-template-columns: minmax(200px,1fr);
     grid-template-rows: 1fr;
-    gap: 1rem;
+    gap: 1rem; */
 }
 
 .announcement {
@@ -199,7 +204,8 @@ p#announcement {
 }
 
 .trending {
-    grid-area: 2 / 1 / 3 / 2;
+    /* grid-area: 2 / 1 / 3 / 2; */
+    margin-top: auto;
 }
 
 
