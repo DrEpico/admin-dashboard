@@ -11,7 +11,7 @@ body {
 
 #container {
     display: grid;
-    grid-template-rows: 20vh 80vh;
+    grid-template-rows: 19vh 81vh;
     grid-template-columns: 1fr 5fr;
 
 }
@@ -22,9 +22,10 @@ body {
     /* box-shadow: rgba(0, 0, 0, 0.45) 0px 16px 20px -20px; */
     padding: 30px 30px 30px 30px;
     display: grid;
-    /* grid-template-columns: repeat(8, 1fr);
+    align-items: center;
+    /* grid-template-columns: repeat(8, 1fr); */
     grid-template-rows: auto;
-    grid-area: 
+    /* grid-area: 
         "search-icon search-bar search-bar search-bar . bell-icon pfp username" */
 }
 
@@ -65,17 +66,55 @@ body {
 .bottom-row {
     display: grid;
     grid-template-columns: 4fr 2fr;
-    
+    align-items: ;
 }
 
 .profile {
     /* grid-area: profile; */
     display: grid;
+    
 }
 
 button{
     height: 2rem;
     width: 100px;
+    align-items: center;
+    appearance: none;
+    background-color: #3EB2FD;
+    background-image: linear-gradient(1deg, #4F58FD, #149BF3 99%);
+    background-size: calc(100% + 20px) calc(100% + 20px);
+    border-radius: 100px;
+    border-width: 0;
+    box-shadow: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: CircularStd,sans-serif;
+    font-size: 1rem;
+    height: auto;
+    justify-content: center;
+    line-height: 1.5;
+    padding: 6px 20px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color .2s,background-position .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: top;
+    white-space: nowrap;
+}
+button:active,
+button:focus {
+  outline: none;
+}
+button:hover {
+  background-position: -20px -20px;
+}
+button:focus:not(:active) {
+  box-shadow: rgba(40, 170, 255, 0.25) 0 0 0 .125em;
 }
 
 .btn{
@@ -83,7 +122,7 @@ button{
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     place-self: center;
-    gap: 30px;
+    gap: 10%
 }
 
 #sidebar {
@@ -91,6 +130,16 @@ button{
     grid-area: 1 / 1 / 3 / 2;
     padding: 2rem;
     color: white;
+}
+
+#logo, #home, #profile, #message, #history, #tasks, #communities, #settings, #support, #communities {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 15px;
+}
+
+#logo, #communities {
+    margin-bottom: 50px;
 }
 
 #board {
@@ -122,7 +171,7 @@ p#announcement {
 
 .card {
     background-color: white;
-    border-radius: 5px;
+    border-radius: 25px;
     padding: 1rem;
 }
 
@@ -152,7 +201,6 @@ p#announcement {
 .trending {
     grid-area: 2 / 1 / 3 / 2;
 }
-
 
 
 
