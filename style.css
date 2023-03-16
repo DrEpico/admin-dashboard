@@ -11,7 +11,7 @@ body {
 
 #container {
     display: grid;
-    grid-template-rows: 19vh 81vh;
+    grid-template-rows: 15vh 85vh;
     grid-template-columns: 1fr 5fr;
 
 }
@@ -19,10 +19,11 @@ body {
 #header {
     background-color: white;
     grid-area: 1 / 2 / 2 / 3;
-    padding: 20px 30px 20px 30px;
+    padding: 0px 30px 0px 30px;
     display: grid;
-    align-items: center;
+    align-content: center;
     grid-template-rows: auto;
+    gap: 15px;
 }
 
 .top-row {
