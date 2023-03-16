@@ -19,25 +19,25 @@ body {
 #header {
     background-color: white;
     grid-area: 1 / 2 / 2 / 3;
-    /* box-shadow: rgba(0, 0, 0, 0.45) 0px 16px 20px -20px; */
-    padding: 30px 30px 30px 30px;
+    padding: 20px 30px 20px 30px;
     display: grid;
     align-items: center;
-    /* grid-template-columns: repeat(8, 1fr); */
     grid-template-rows: auto;
-    /* grid-area: 
-        "search-icon search-bar search-bar search-bar . bell-icon pfp username" */
 }
 
 .top-row {
     display: grid;
-    grid-template-columns: 0.5fr 4fr 0.5fr 0.5fr 1fr;
+    grid-template-columns: 3fr 2fr;
     grid-template-rows: 2rem;
-    justify-items: center;
-    align-items: center;
-    /* grid-template-areas: 
-        "search-icon search-bar . bell-icon pfp username"; */
-    
+}
+
+.top-right {
+    margin-left: auto;
+    margin-right: 85px;
+}
+
+#top-left{
+
 }
 
 #search-icon {
@@ -77,7 +77,9 @@ body {
     gap: 1rem;
 }
 
-.nest-child {}
+.nest-child {
+
+}
 
 button{
     height: 2rem;
