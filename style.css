@@ -197,6 +197,7 @@ svg {
     border-left: 10px solid rgba(65, 138, 126, 0.897);
     display: flex;
     flex-direction: column;
+    
 }
 
 .card-header {
