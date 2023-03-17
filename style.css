@@ -197,7 +197,23 @@ svg {
     border-left: 10px solid rgba(65, 138, 126, 0.897);
     display: flex;
     flex-direction: column;
-    
+
+}
+
+.text-part {
+    padding: 10px;
+}
+
+.pj-card p {
+    margin-top: 5px;
+}
+
+.announcement p {
+    margin-top: 4px;
+}
+
+.trending p {
+    margin-top: 2px;
 }
 
 .card-header {
@@ -211,12 +227,7 @@ svg {
 }
 
 .ann {
-    margin: 16px 14px 16px 14px;
-}
-
-.ann1 {
-    margin: 10px;
-    padding-bottom: 10px;
+    margin: 14px 12px 14px 12px;
 }
 
 .trending {
@@ -224,6 +235,6 @@ svg {
 }
 
 .tre {
-    margin: 18px 14px 18px 14px; 
+    margin: 14px 12px 14px 12px;
 }
 
