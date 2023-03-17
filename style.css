@@ -26,6 +26,11 @@ body {
     gap: 15px;
 }
 
+#header svg {
+    width: 25px;
+    height: 25px;
+}
+
 .top-row {
     display: grid;
     grid-template-columns: 3fr 2fr;
@@ -33,6 +38,8 @@ body {
 }
 
 .top-right {
+    display: flex;
+    align-items: center;
     margin-left: auto;
     margin-right: 85px;
 }
@@ -51,16 +58,19 @@ body {
     justify-self: start;
 }
 
-#bell-icon {
-    /* grid-area: bell-icon; */
+.pfp {
+    border-radius: 50px;
+    border: 2px solid rgba(65, 138, 126, 0.897);
 }
 
-#pfp {
-    /* grid-area: pfp; */
+#main-pfp {
+    width: 41px;
+    height: 41px;
 }
 
-#usename {
-    /* grid-area: username; */
+#sub-pfp{
+    width: 38px;
+    height: 38px;
 }
 
 .bottom-row {
@@ -75,10 +85,6 @@ body {
 .nest-parent {
     display: flex;
     gap: 1rem;
-}
-
-.nest-child {
-
 }
 
 button{
@@ -138,6 +144,12 @@ button:focus:not(:active) {
     color: white;
 }
 
+#sidebar svg {
+    width: 27px;
+    height: 27px;
+    fill: white;
+}
+
 #logo, #home, #profile, #message, #history, #tasks, #communities, #settings, #support, #communities {
     display: flex;
     gap: 0.5rem;
@@ -184,13 +196,16 @@ p#announcement {
 
 .card-icons {
     display: flex;
-    gap: 5px;
     justify-content: flex-end;
     margin-top: auto;
+    gap: 15px;
+    padding-right: 20px;
+    padding-bottom: 20px;
 }
 
 svg {
     width: 30px;
+    height: 30px;
 }
 
 .pj-card {
