@@ -3,17 +3,18 @@
 * {
     font-family: 'Quicksand', sans-serif;
     margin: 0px;
+   
 }
 
 body {
-    margin: 0px;
+    margin: 0px; 
+    color:rgb(31, 31, 31)
 }
 
 #container {
     display: grid;
-    grid-template-rows: 15vh 85vh;
+    grid-template-rows: 15fr 85fr;
     grid-template-columns: 1fr 5fr;
-
 }
 
 #header {
@@ -44,18 +45,43 @@ body {
     margin-right: 85px;
 }
 
-#top-left{
-
+#username {
+    font-size: 1.2rem;
 }
 
-#search-icon {
-    /* grid-area: search-icon; */
+.top-left {
+    display: flex;
+    align-items: center;
 }
 
-#searchbar {
-    background-color: black;
-    border-radius: 10px;
-    justify-self: start;
+.search-container {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #ebeaea;
+    padding-left: 5px;
+}
+
+.search-container input[type="text"] {
+    width: 50%;
+    flex: 1;
+    border: none;
+    border-radius: 20px;
+    padding: 5px;
+    font-size: 16px;
+    background-color: #ebeaea;
+    outline: none;
+}
+
+.search-container button[type="submit"] {
+    width: 70px;
+    padding: 5.5px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 13px;
 }
 
 .pfp {
@@ -160,7 +186,7 @@ button:focus:not(:active) {
 #logo, #home, #profile, #message, #history, #tasks, #communities, #settings, #support, #communities {
     display: flex;
     gap: 0.5rem;
-    margin-bottom: 15px;
+    margin-bottom: 17px;
 }
 
 #logo, #communities {
@@ -168,7 +194,7 @@ button:focus:not(:active) {
 }
 
 #board {
-    background-color: lightgrey;
+    background-color: #dfdddd;
     display: grid;
     grid-template-columns: 4fr 1fr;
     grid-template-rows: 2rem 1fr;/* align #your-projects to bottom */
@@ -190,8 +216,8 @@ p#announcement {
 #main {
     grid-area: 2 / 1 / 3 / 2;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
-    grid-template-rows: repeat(auto-fill, minmax(250px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    grid-template-rows: repeat(auto-fit, minmax(250px,1fr));
     gap: 1rem;
 }
 
@@ -208,6 +234,10 @@ p#announcement {
     gap: 15px;
     padding-right: 20px;
     padding-bottom: 20px;
+}
+
+.card-icons svg {
+    fill: rgb(39, 39, 39);
 }
 
 svg {
@@ -248,12 +278,24 @@ svg {
     flex-direction: column;
 }
 
+.announcement {
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
 .ann {
     margin: 14px 12px 14px 12px;
 }
 
+#trend-card {
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
 .trending {
     margin-top: auto;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 .tre {
